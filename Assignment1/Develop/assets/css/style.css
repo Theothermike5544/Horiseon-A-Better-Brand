@@ -1,13 +1,24 @@
+/*Universal Begin*/
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
+/* relocated p and a identifer styling to universal as there are no page differences for either selector */
+p {
+    font-size: 16px;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+/*Universal End*/
+/*Body Begin */
 body {
     background-color: #d9dcd6;
 }
-/* header section */
+/* Header Begin */
+/* Header identifier updated to reflect element as opposed to a class */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,41 +26,34 @@ header {
     color: #ffffff;
 }
 
-.header h1 {
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+header h1 .seo {
     color: #d9dcd6;
 }
-/*  Fix "Calibri" */
-.header nav {
+/*  (Fix) "Calibri" spelling??? add '' marks, lost here why its underlined for misspelling when it appears to be spelled correctly per W3Schools */
+/* Corrected Syntax class for nav rather than div to be semantic */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-
-.header nav ul {
+/* Corrected Syntax class for nav rather than div to be semantic */
+header nav ul {
     list-style-type: none;
 }
-
-.header nav ul li {
+/* Corrected Syntax class for nav rather than div to be semantic */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
-
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
-/* Hero / Section / Article */
-p {
-    font-size: 16px;
-}
-
+/*Header End */
+/* Section / Hero Begin */
 .hero {
     height: 800px;
     width: 100%;
@@ -58,6 +62,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+/*Section / Hero End */
+/* Article Begin */
 
 .float-left {
     float: left;
@@ -69,12 +75,32 @@ p {
     margin-left: 25px;
 }
 
+
 .content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
-/* Aside Section */
+/* article class combined duplicate syntax into 1 line style for formatting solution */
+.content div {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+/* Content img replicated text consolidated */
+.content img {
+    max-height: 200px;
+}
+/* Content h2 replicated text consolidated */
+.content h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+/* Article End */
+/* Aside Begin */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -82,21 +108,11 @@ p {
     float: right;
     width: 20%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
+/* consolidation of benefit id's into 1 style */
+.benefits div {
     margin-bottom: 32px;
     color: #ffffff;
 }
@@ -112,25 +128,8 @@ p {
     margin: 10px auto;
     max-width: 150px;
 }
-/* (FIXED) article class combined duplicate syntax into 1 line style for formatting solution */
-.search-engine-optimization, .online-reputation-management, .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-/* Content img replicated text consolidated */
-.content img {
-    max-height: 200px;
-}
-/* Content h2 replicated text consolidated */
-.content h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-/* Footer section */
+/*Aside End */
+/* Footer Begin */
 footer {
     padding: 30px;
     clear: both;
@@ -141,3 +140,5 @@ footer {
 .footer h2 {
     font-size: 20px;
 }
+/* Footer End */
+/*Body End */
