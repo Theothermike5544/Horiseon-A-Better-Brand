@@ -7,7 +7,7 @@
 body {
     background-color: #d9dcd6;
 }
-
+/* header section */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -45,7 +45,7 @@ a {
     color: #ffffff;
     text-decoration: none;
 }
-
+/* Hero / Section / Article */
 p {
     font-size: 16px;
 }
@@ -74,7 +74,7 @@ p {
     display: inline-block;
     margin-left: 20px;
 }
-
+/* Aside Section */
 .benefits {
     margin-right: 20px;
     padding: 20px;
@@ -187,7 +187,7 @@ p {
     margin-bottom: 20px;
     font-size: 36px;
 }
-
+/* Footer section */
 footer {
     padding: 30px;
     clear: both;
